@@ -1,0 +1,4 @@
+# INVARIABLES
+log_level="debug"
+port="8080"
+server_id="mock1"
