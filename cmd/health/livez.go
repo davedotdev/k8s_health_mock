@@ -71,7 +71,7 @@ const badLivezChecks = `[+]ping ok
 livez check failed
 `
 
-func (c ConfigData) livez(w http.ResponseWriter, r *http.Request) {
+func (c *ConfigData) livez(w http.ResponseWriter, r *http.Request) {
 	// Get the verbose query and either return sparse, or enrich the response
 	if _, verbose := r.URL.Query()["verbose"]; !verbose {
 

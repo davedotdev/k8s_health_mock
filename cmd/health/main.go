@@ -109,6 +109,7 @@ func main() {
 	// This is publically accessible
 	r.HandleFunc("/readyz", config.readyz)
 	r.HandleFunc("/livez", config.livez)
+	r.HandleFunc("/mode", config.mode)
 
 	// Example code
 	// r.Handle("/baz", config.MiddlewareHandler(injectActiveSession(config.HTTP_Protected_API_Presence())))

@@ -49,6 +49,14 @@ func (c *ConfigData) Get(name string) error {
 	return nil
 }
 
+func (c *ConfigData) SetReadyzFail(mode bool) {
+	c.ReadyzFail = mode
+}
+
+func (c *ConfigData) SetLivezFail(mode bool) {
+	c.LivezFail = mode
+}
+
 // Empty checks if the config is empty and returns true if it is and false if not
 func (c *ConfigData) IsEmpty() bool {
 	rvalues := reflect.ValueOf(*c)
