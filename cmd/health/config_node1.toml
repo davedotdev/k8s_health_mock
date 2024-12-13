@@ -1,0 +1,4 @@
+# INVARIABLES
+log_level="debug"
+port="8083"
+server_id="node1"
